@@ -1,0 +1,12 @@
+.website-header {
+	margin-top: 0px;
+	height: 250px;
+	background-image: url("./app/images/me.jpg");
+	background-size: 100%;
+}
+
+.website-header h1 {
+  color: white;
+  padding: 15px;
+  margin-top: 0px;
+}
