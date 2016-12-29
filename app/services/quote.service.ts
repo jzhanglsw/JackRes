@@ -30,7 +30,7 @@ export class QuoteService{
 }
 
 function mapQuote(response:Response): Quote{
-  return toQuote(response.json())
+  return toQuote(response.json());
 }
 
 function toQuote(r:any): Quote{
