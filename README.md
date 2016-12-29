@@ -6,16 +6,14 @@ was altered (potentially for the github pages).
 
 You can force generate .js and .map files from your .ts files with tsc filename --sourceMap
 
-Ambient modules like quote.ts are different from the other ts files.
-
 Since you are using a hierarchical file structure, you will need to be mindful of this during imports.
-If sublime says that they cannot find the import, it is most likely because the import is not inn the relative
+If sublime says that they cannot find the import, it is most likely because the import is not in the relative
 location that was specified.
 
 If you receive the error "Angular 2 HTTP GET with TypeScript error http.get(…).map is not a function",
 be sure to add import 'rxjs/add/operator/map'; to your import statements.
 
-For the error "OInit is not defined", just import OnInit from  'angular2/core'
+For the error "OnInit is not defined", just import OnInit from  'angular2/core'
 
 # Notes about the different relatively mysterious files
 tsconfig.json - Configuration for typescript, {sourcemap: True} makes sure that typscript will generate
