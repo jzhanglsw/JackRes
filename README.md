@@ -1,3 +1,33 @@
+# Note to myself
+
+If you receive errors like Cannot find module '../lib/tsc.js', try the following:
+Delete your node_modules folder and run npm install again. Usually this means that the node_modules library
+was altered (potentially for the github pages).
+
+You can force generate .js and .map files from your .ts files with tsc filename --sourceMap
+
+Since you are using a hierarchical file structure, you will need to be mindful of this during imports.
+If sublime says that they cannot find the import, it is most likely because the import is not in the relative
+location that was specified.
+
+If you receive the error "Angular 2 HTTP GET with TypeScript error http.get(…).map is not a function",
+be sure to add import 'rxjs/add/operator/map'; to your import statements.
+
+For the error "OnInit is not defined", just import OnInit from  'angular2/core'
+
+# Notes about the different relatively mysterious files
+tsconfig.json - Configuration for typescript, {sourcemap: True} makes sure that typscript will generate
+map files which allows debugging of typescript files
+
+e2e folder - End to end testing folder. Files that end with -spec are testing files.
+
+package.json - Angular's pom.xml file. Contains dependencies. Project name. And what specific commands actually run for the project.
+
+app.routing.ts - The routing module for angular 2. It registers all components to quickly cycle between routerLink elements.
+The components will replace the contents of router-outlet with their defined templates.
+
+System.config.js - Contains a description already but not sure how it specifically differs from packages.json just yet.
+
 # Angular QuickStart Source
 [![Build Status][travis-badge]][travis-badge-url]
 
