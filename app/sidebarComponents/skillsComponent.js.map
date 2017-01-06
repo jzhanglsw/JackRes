@@ -1,0 +1,1 @@
+{"version":3,"file":"skillsComponent.js","sourceRoot":"","sources":["skillsComponent.ts"],"names":[],"mappings":";;;;;;;;;;AAAA,qBAA0B,eAAe,CAAC,CAAA;AAM1C;IAAA;QAAgC,SAAI,GAAG,SAAS,CAAC;IAAC,CAAC;IAJnD;QAAC,gBAAS,CAAC;YACT,WAAW,EAAE,oCAAoC;YACjD,SAAS,EAAE,CAAC,kBAAkB,CAAC;SAChC,CAAC;;uBAAA;IACgD,sBAAC;AAAD,CAAC,AAAnD,IAAmD;AAAtC,uBAAe,kBAAuB,CAAA"}
